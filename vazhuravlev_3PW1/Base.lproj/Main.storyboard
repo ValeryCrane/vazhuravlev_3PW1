@@ -16,38 +16,39 @@
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0pf-fN-HQM">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0pf-fN-HQM" customClass="ColorView" customModule="vazhuravlev_3PW1" customModuleProvider="target">
                                 <rect key="frame" x="15" y="62.000000000000007" width="360" height="109.66666666666669"/>
                                 <color key="backgroundColor" systemColor="systemMintColor"/>
+                                <gestureRecognizers/>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="m24-ER-YhR">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="m24-ER-YhR" customClass="ColorView" customModule="vazhuravlev_3PW1" customModuleProvider="target">
                                 <rect key="frame" x="15" y="560.33333333333337" width="360" height="109.66666666666663"/>
                                 <color key="backgroundColor" systemColor="systemMintColor"/>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vce-1l-PtR">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vce-1l-PtR" customClass="ColorView" customModule="vazhuravlev_3PW1" customModuleProvider="target">
                                 <rect key="frame" x="15" y="186.66666666666666" width="172.66666666666666" height="109.66666666666666"/>
                                 <color key="backgroundColor" systemColor="systemMintColor"/>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Bya-7E-xIo">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Bya-7E-xIo" customClass="ColorView" customModule="vazhuravlev_3PW1" customModuleProvider="target">
                                 <rect key="frame" x="15" y="311.33333333333331" width="172.66666666666666" height="109.33333333333331"/>
                                 <color key="backgroundColor" systemColor="systemMintColor"/>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vEp-kt-JST">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vEp-kt-JST" customClass="ColorView" customModule="vazhuravlev_3PW1" customModuleProvider="target">
                                 <rect key="frame" x="15" y="435.66666666666669" width="172.66666666666666" height="109.66666666666669"/>
                                 <color key="backgroundColor" systemColor="systemMintColor"/>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nho-iV-DFv">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nho-iV-DFv" customClass="ColorView" customModule="vazhuravlev_3PW1" customModuleProvider="target">
                                 <rect key="frame" x="202.66666666666663" y="435.66666666666669" width="172.33333333333337" height="109.66666666666669"/>
                                 <color key="backgroundColor" systemColor="systemMintColor"/>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="F2H-ri-90D">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="F2H-ri-90D" customClass="ColorView" customModule="vazhuravlev_3PW1" customModuleProvider="target">
                                 <rect key="frame" x="202.66666666666663" y="186.66666666666663" width="172.33333333333337" height="234"/>
                                 <color key="backgroundColor" systemColor="systemMintColor"/>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i2i-O7-acN">
-                                <rect key="frame" x="157.66666666666666" y="715" width="75" height="35"/>
+                                <rect key="frame" x="116.66666666666669" y="715" width="157" height="35"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Поменять цвета!"/>
                                 <connections>
                                     <action selector="changeColorButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Fc2-q4-2Ku"/>
                                 </connections>
@@ -102,6 +103,49 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="135.38461538461539" y="3.5545023696682461"/>
+        </scene>
+        <!--Color View Controller-->
+        <scene sceneID="udb-IT-Cau">
+            <objects>
+                <viewController storyboardIdentifier="ColorViewController" id="cZJ-2x-aev" customClass="ColorViewController" customModule="vazhuravlev_3PW1" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="r5U-2J-Unv">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H9j-eZ-qY3">
+                                <rect key="frame" x="25" y="97" width="340" height="39"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="32"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="csG-aS-Tvj">
+                                <rect key="frame" x="25" y="161" width="340" height="624"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="ORm-pW-7pR"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="H9j-eZ-qY3" firstAttribute="top" secondItem="ORm-pW-7pR" secondAttribute="top" constant="50" id="Ksf-Od-hiy"/>
+                            <constraint firstItem="csG-aS-Tvj" firstAttribute="top" secondItem="H9j-eZ-qY3" secondAttribute="bottom" constant="25" id="XB3-wn-kGk"/>
+                            <constraint firstItem="ORm-pW-7pR" firstAttribute="trailing" secondItem="H9j-eZ-qY3" secondAttribute="trailing" constant="25" id="a9a-gJ-2IF"/>
+                            <constraint firstItem="ORm-pW-7pR" firstAttribute="bottom" secondItem="csG-aS-Tvj" secondAttribute="bottom" constant="25" id="eFC-l7-Uel"/>
+                            <constraint firstItem="csG-aS-Tvj" firstAttribute="trailing" secondItem="H9j-eZ-qY3" secondAttribute="trailing" id="icL-zJ-AZ7"/>
+                            <constraint firstItem="csG-aS-Tvj" firstAttribute="leading" secondItem="H9j-eZ-qY3" secondAttribute="leading" id="pgG-iy-B0T"/>
+                            <constraint firstItem="H9j-eZ-qY3" firstAttribute="leading" secondItem="ORm-pW-7pR" secondAttribute="leading" constant="25" id="rE2-il-2JQ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="aboutTextView" destination="csG-aS-Tvj" id="dSq-ek-0bn"/>
+                        <outlet property="titleLabel" destination="H9j-eZ-qY3" id="Lha-ce-yMD"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="m38-Vp-ihu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="953.84615384615381" y="3.5545023696682461"/>
         </scene>
     </scenes>
     <resources>
